@@ -21,18 +21,45 @@ The program is able to not only plot the theta and phi position of the mass over
 Note that the coordinate system defines theta to be the angle from the z-axis, and phi to be the angle from the x-axis in the x-y plane.
 
 Here are some parameters in the program that can be changed (units in parenthesis):
+
+
 N = number of attractors.
+
+
 L = length of pendulum rod (m).
+
+
 R = distance each attractor is from the center of the plane below the pendulum's pivot (m).
+
+
 m = mass of the pendulum (kg) (at the end of the pendulum, so more akin to that of say attaching a bob to the end of the massless rod).
+
+
 g = acceleration due to gravity (m/s^2).
+
+
 alpha = strength of attractor. Note that a negative number means that it will attract and that positive numbers make it repulsive (N m^2/kg).
+
+
 beta = drag force proportionality constant (whatever the dimensions work out to, typically just kept on the order of 1e-4 or 1e-3 as to not overdampen).
+
+
 theta_0 = initial position in the theta coordinate (radians), used for individual runs.
+
+
 phi_0 = initial position in the phi coordinate (radians), used for individual runs.
+
+
 omega-theta_0 = initial angular velocity in the theta direction (rad/s), used for individual runs.
+
+
 omega-phi_0 = initial angular velocity in the phi direction (rad/s), used for individual runs.
+
+
 tend = time you want the system to run for (s).
+
+
 dt = time step (s). Kept around 1e-3 for simulation accuracy's sake.
+
 
 Note: the simulation spits NaN for small theta. This is just an artifact of how the system of equations was formed, given there are coordinate singularities embedded within the phi double-dot (second time derivative of phi) expression.
