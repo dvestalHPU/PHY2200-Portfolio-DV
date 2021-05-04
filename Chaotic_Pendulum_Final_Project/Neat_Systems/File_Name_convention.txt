@@ -1,0 +1,8 @@
+The files for the videos are named according to the RunODESD inputs:
+N, L, R, m, g, alpha, beta, theta 0, phi 0, omega-theta 0, omega-phi 0, tend, dt.
+Hence, xy-projection plots have the video titles:
+xy_trajectory_N_L_R_m_g_alpha_beta_theta0_phi0_omegatheta0_omegaphi_0_tend_dt
+
+Same goes for the xz-projection plots:
+xz_trajectory_N_L_R_m_g_alpha_beta_theta0_phi0_omegatheta0_omegaphi_0_tend_dt
+
